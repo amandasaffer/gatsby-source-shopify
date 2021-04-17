@@ -199,6 +199,18 @@ const productsQuery = (dateString?: string) => {
               originalSrc
               transformedSrc
             }
+            metafields {
+              edges {
+                node {
+                  description
+                  id
+                  key
+                  namespace
+                  value
+                  valueType
+                }
+              }
+            }
             featuredMedia {
               alt
               mediaContentType
